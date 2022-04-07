@@ -1,0 +1,261 @@
+	nav li a{
+			text-decoration:none;
+			color:black;
+			font-size:20px;
+			background-color: red;
+		}
+		nav li{
+			list-style:none;
+			display:inline-block;
+			padding:4px 70px;
+			text-align:center;
+			
+		}
+		ul{
+			padding:0;
+		}
+		a:hover{
+			color:white;
+		}
+		nav:hover{
+			cursor:default;
+		}
+		#contenido{
+			width:1000px;
+			margin:0 auto;
+		}
+		#nombre{
+			width: 250px;
+			height: 20px;
+			text-align:center;
+			border: 3px solid brown;
+			border-radius: 10px 0px 39px 22px;
+			margin:0 auto;
+			box-shadow: 0px 0px 20px red inset, 0px 0px 25px blue;}
+		.cuadros{
+
+			   float: left;
+			   width:240px;
+			   border:1px gray solid;
+			   border-radius:3px;
+			   background-color:white;
+			   text-align:center;
+			   padding:6px 6px 30px 6px;
+				box-shadow:0px 0px 4px gray;
+			}
+			body{
+   background:url("../imagenes/fondo.jpg")no-repeat center center fixed;
+
+   background-color:red;
+   background-size: cover;
+   -moz-background-size: cover;
+   -webkit-background-size: cover;
+   -o-background-size: cover;
+}
+
+header{
+  
+  font-family:Alegreya-Black;
+  font-size:24px;
+  color:white;
+  
+}
+section{
+  font-family:Inder;
+  font-size:12px;
+}
+nav{
+	display: flex;
+	background-color: #ff1a1a;
+ 	justify-content: flex-end;
+	margin-bottom: 10px;
+	font-family: blazed;
+}
+#titulo{
+  font-family:Alegreya-Black;
+  font-size:18px;
+  margin-top:47px;
+}
+#cuadro2{
+   margin:0 112px 0 112px;
+}
+#contenido{
+   width:1100px;
+   margin:0 auto;
+}
+
+#texto {
+	text-align: center;
+	font-size: 20px;
+	background-color: #eeeeee;
+	    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.elemento_menu {
+	margin:2.5em;
+	margin-right:2.5em;
+	padding: 2em;
+	background-color:beige;
+	border: #BBB 1px solid; 
+	height: auto;
+	box-shadow: 10px 10px 5px #CCC;
+ 	border-radius: 10px;
+ 	font-family: sans;
+}
+ .oculto { display: none; } 
+ .visible { display: block; 
+ } 
+ .pie{
+	text-align: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	color: white;
+}
+ .pie .galeria{
+	flex-grow: 1;
+}
+ img{
+	margin: 10px;
+}
+ .copy{
+	margin-top: 20px;
+}
+ footer{
+	clear:both;
+  font-family:Alegreya-Black;
+  font-size:13px;
+  color:black;
+margin-top: 100px
+}
+.formulario ul{
+	width:750px;
+	list-style-type:none;
+	list-style-position:outside;
+	margin:0px;
+	padding:0px;
+}
+
+.formulario li {
+	padding:12px;
+	border-bottom:1px solid #eee;
+	position:relative;
+}
+
+.formulario h2 {
+	margin:0;
+	display:inline;
+}
+
+.notificacion {
+	color:blue;
+	float:right;
+}
+
+.formulario label {
+    width:150px;
+    margin-top: 3px;
+    display:inline-block;
+    padding:3px;
+}
+
+.formulario input {
+    height:20px; 
+    width:220px; 
+    padding:5px 8px;
+}
+
+.formulario button {
+	margin-left:156px;
+}
+button.submit {
+	background-color:black;
+	padding: 6px 20px;
+    text-align: center;
+    color:white;
+
+}
+.texto{
+	font-family: sans;
+}
+#texto{
+	margin-left: 20px;
+    padding-left: 10px;
+    text-align: justify;
+    float:left;
+    width:60%;
+}
+
+p img {
+    vertical-align: top;
+    float: left;
+    margin: 5px;
+}
+
+p {
+    text-indent: 25px;
+	
+}
+
+.tabla2{
+	margin-top: 2em;
+  }
+  
+  .tabla2 th, .tabla2 td{
+	text-align: center;
+	padding: .50em .100em;
+	border: 1px solid black;
+	width: 140px;
+  }
+  
+  .tabla2 caption{
+	text-align: left;
+	margin-bottom: 5px;
+	font-variant: small-caps;
+	font-size: 20px;
+	letter-spacing: 5px;
+  }
+  
+  .tabla2 td{
+	text-align: left;
+	font-size: .8em;
+	padding-bottom: 3em;
+	padding-right: 3em;
+  }
+
+  div#noticias {
+	  
+	  column-count: 2;
+	  
+  }
+  div#analisis {
+	  
+	column-count: 2;
+	
+}
+  .enlaces {
+	text-decoration:none;
+	color:black;
+	font-size:15px;
+	background-color: rgb(211, 193, 160);
+	border: 1px black solid;
+  }
+
+  div {
+	  font-size: 16px;
+  }
+
+  div#inicio p {
+	margin-bottom: 5em;
+  }
+  div#analisis p {
+	margin-bottom: 5em;
+  }
+  div#noticias p {
+	margin-bottom: 5em;
+  }

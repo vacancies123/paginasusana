@@ -1,0 +1,425 @@
+<!doctype html>
+<html>
+  <head>
+	<meta charset="utf-8"/>
+	<link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon" />
+	<title>Blog de juegos</title>
+<!--script para el cambio de paginas-->
+<script type="text/javascript"> 
+	function muestra(capa) { 
+		var capas = document.getElementsByTagName("div")
+		for(var i=0; i<capas.length; i++) { 
+		   	 if(capas[i].className == "elemento_menu visible") 
+				capas[i].className = "elemento_menu oculto"; 
+			 }
+			 var elemento = document.getElementById(capa); 
+		elemento.className = "elemento_menu visible"; 
+	} 
+</script> 
+
+	<link rel="stylesheet" type="text/css" href="estilos/estilo.css">
+  </head>
+
+  <body>
+  	
+
+	<div id="contenido">
+		<img src="imagenes/franja.png">
+<!--menu-->
+<nav>
+<ul>
+<li >
+<a href='#' onclick="muestra('inicio')">Inicio</a>
+</li>
+<li>
+<a href='#' onclick="muestra('analisis')">Analisis</a>
+</li>
+<li>
+<a href='#' onclick="muestra('noticias')">Noticias</a>
+</li>
+<li>
+<a href='#' onclick="muestra('calendario')">Calendario</a>
+</li>
+<li>
+<a href='#' onclick="muestra('contacto')">Contactanos</a>
+</li>
+</ul>
+</nav>
+
+	
+	
+	<section >
+		<article >
+<!--inicio-->
+		<div id="inicio" class="elemento_menu visible">
+			<h1>Hoy en portada</h1>
+			<h1>Analisis</h1>
+			<p>
+			
+			<img src="imagenes/analisis1.jpg" >
+			<h2>ANÁLISIS CASCOS EPOS H3 HYBRID</h2>
+			Actualmente el mercado de periféricos para audio está muy saturado debido a la cantidad ingente de modelos ofrecidos por diferentes compañías y cada una de ellas trata de hacerse hueco dentro del mundo del entretenimiento digital. Sin embargo, siempre hay quien intenta diferenciarse del resto mediante la calidad de sus productos o alguna característica que la hace especial. En esta entrada comentamos los cascos de la serie H3 de la marca EPOS, en concreto del modelo Hybrid.
+
+El sonido es un aspecto muy importante a la hora de disfrutar plenamente de un videojuego; de hecho, las experiencias que ofrecen ciertos videojuegos cambian sustancialmente si los jugamos con unos buenos cascos. Por ejemplo, un título donde nos pareció relevante este aspecto, fue con Hellblade Senua’s Sacrifice. Ninja Theory, creadores del videojuego, siempre recomendaron disfrutar de su título con auriculares, pues de este modo se conseguía potenciar el efecto que atormenta a Senua, su protagonista, la cual escucha voces en su cabeza. Por lo tanto, usar unos buenos cascos favorece la inmersión del jugador.
+<a class="enlaces" href="#" onclick="muestra('analisis1')">leer mas</a>		
+</p>
+
+			<p>
+			
+				<img src="imagenes/analisis2.jpg.webp" >
+				<h2>ANÁLISIS HADES</h2>
+				Hades me ha enamorado. Llevarse el galardón de mejor juego del año 2020 creo que se queda corto para esta obra maestra de Supergiant Games. A mis más de treinta años jugando ya es difícil volverme loco de pasión con un título y Hades lo ha conseguido. Un juego al que di una oportunidad por recomendación de un amigo y me arrepiento de no haberlo hecho antes. Su manido género, el de los roguelite, puede que no le haga destacar en un primer vistazo pero en el momento en el que mueres por primera vez sabes que este juego es especial.
+
+				La idea de empezar desde cero cada vez que fallamos en un roguelite es algo que no me fascina pero en Hades quieres morir una y otra vez. Y esto es porque es la única forma de avanzar en una historia que cada vez nos atrapa más. La premisa es sencilla: somos Zagreo, hijo de Hades, que cansados de la tiranía de nuestro padre decidimos escapar del Inframundo. A este no le hará gracia e intentará impedírnoslo. Pero como Zagreo es muy majo, contará con la ayuda de los dioses del Olimpo para huir. No os vamos a contar más de la historia porque termina enganchando como la mejor de las series.
+				<a class="enlaces" href="#" onclick="muestra('analisis2')">leer mas</a>	
+			</p>
+			<h1>NOTICIAS</h1>
+				<p>
+					
+			
+					<img src="imagenes/noticia1.jpg">
+					<h2>NINTENDO SWITCH Y SU JUEGO EN LA NUBE</h2>
+					Nintendo nos presentó al luchador que completará la plantilla de Sup
+					er Smash Bros. Ultimate (Switch, 2018). Toda una sorpresa y una buena
+					 elección: Sora de la saga Kingdom Hearts. Un personaje querido entre
+					 los jugadores que nos trajo una noticia más: los videojuegos de esta 
+					 serie llegarán pronto a Nintendo Switch. Algo previsible que se termi
+					 naran lanzando en la consola más vendida a lo largo del año en Japón 
+					 pero no tanto la forma en la que lo harán. No veremos un lanzamiento 
+					 físico ni digital sino en la nube. Una Cloud version no muy bien rec
+					 ibida por gran parte de la comunidad.
+					 <a class="enlaces" href="#" onclick="muestra('noticia1')">leer mas</a>	
+				</p>
+				<p>
+					<img src="imagenes/noticia2.jpg.webp">
+					<h2>TEMAZOS DEL VIDEOJUEGO</h2>
+					La famosa precuela de Red Dead Redemption ya protagonizó anteriormente una primera entrada de Temazos del 
+					videojuego, al igual que en su momento hizo el primer juego con Deadman’s
+					 Gun. Esta última melodía es un gran acompañamiento para la despedida d
+					 e un videojuego, un bonito agradecimiento para los oídos del jugador po
+					 r el tiempo invertido delante de una pantalla.
+					 <a class="enlaces" href="#" onclick="muestra('noticia2')">leer mas</a>
+				</p>
+		</div>
+</article>
+<!--contacto-->
+<div id="contacto" class="elemento_menu oculto">
+		<form class="formulario" method="post" action="tratamiento.php" >
+   <ul>
+   		<li>
+			<h2>Contacto</h2>
+			<span class="notificacion">*Datos requeridos</span>
+		</li>
+		<li>	
+			<label for="nombre">Nombre:</label>
+   			<input type="text" id="nombre2" placeholder="Su nombre" size="20" maxlength="10" />
+		</li>
+	
+		<li>
+			<label for="nombre">Email:</label>
+			<input type="text" id="email" placeholder="Su email" size="30" maxlength="10" />
+		</li>
+		<li>
+			<label for="mensaje">Mensaje:</label>
+			<textarea name="mensaje" id="mensaje" rows="7" cols="70"></textarea>
+		</li>
+ 		<li>
+ 			<button class="submit" type="submit">Enviar Mensaje</button>
+ 		</li>
+ 	</ul>	
+	</form>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.118394804544!2d-3.5791785843503314!3d40.45051646150741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd4231e13012398f%3A0x1a4f91fa63d4c4e2!2sBANDAI+NAMCO+Entertainment+Iberica+S.A.!5e0!3m2!1sen!2ses!4v1550578870477" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div> 
+<!--seccion analisis-->
+<div id="analisis" class="elemento_menu oculto" >
+	<p>
+			
+		<img src="imagenes/analisis1.jpg" width="350" >
+		<h2>ANÁLISIS CASCOS EPOS H3 HYBRID</h2>
+		Actualmente el mercado de periféricos para audio está muy saturado debido a la cantidad ingente de modelos ofrecidos por diferentes compañías y cada una de ellas trata de hacerse hueco dentro del mundo del entretenimiento digital. Sin embargo, siempre hay quien intenta diferenciarse del resto mediante la calidad de sus productos o alguna característica que la hace especial. En esta entrada comentamos los cascos de la serie H3 de la marca EPOS, en concreto del modelo Hybrid.
+
+El sonido es un aspecto muy importante a la hora de disfrutar plenamente de un videojuego; de hecho, las experiencias que ofrecen ciertos videojuegos cambian sustancialmente si los jugamos con unos buenos cascos. Por ejemplo, un título donde nos pareció relevante este aspecto, fue con Hellblade Senua’s Sacrifice. Ninja Theory, creadores del videojuego, siempre recomendaron disfrutar de su título con auriculares, pues de este modo se conseguía potenciar el efecto que atormenta a Senua, su protagonista, la cual escucha voces en su cabeza. Por lo tanto, usar unos buenos cascos favorece la inmersión del jugador.
+<a class="enlaces" href="#" onclick="muestra('analisis1')">leer mas</a>		
+</p>
+
+		<p>
+		
+			<img src="imagenes/analisis2.jpg.webp" width="350" >
+			<h2>ANÁLISIS HADES</h2>
+			Hades me ha enamorado. Llevarse el galardón de mejor juego del año 2020 creo que se queda corto para esta obra maestra de Supergiant Games. A mis más de treinta años jugando ya es difícil volverme loco de pasión con un título y Hades lo ha conseguido. Un juego al que di una oportunidad por recomendación de un amigo y me arrepiento de no haberlo hecho antes. Su manido género, el de los roguelite, puede que no le haga destacar en un primer vistazo pero en el momento en el que mueres por primera vez sabes que este juego es especial.
+
+			La idea de empezar desde cero cada vez que fallamos en un roguelite es algo que no me fascina pero en Hades quieres morir una y otra vez. Y esto es porque es la única forma de avanzar en una historia que cada vez nos atrapa más. La premisa es sencilla: somos Zagreo, hijo de Hades, que cansados de la tiranía de nuestro padre decidimos escapar del Inframundo. A este no le hará gracia e intentará impedírnoslo. Pero como Zagreo es muy majo, contará con la ayuda de los dioses del Olimpo para huir. No os vamos a contar más de la historia porque termina enganchando como la mejor de las series.
+			<a class="enlaces" href="#" onclick="muestra('analisis2')">leer mas</a>	
+		</p>
+</div>
+
+<div id="analisis1" class="elemento_menu oculto" >
+
+	<img src="imagenes/anlisis1-1.jpg">
+
+	<h1>
+		ANÁLISIS CASCOS EPOS H3 HYBRID
+	</h1>
+	<p>
+		Actualmente el mercado de periféricos para audio está muy saturado debido a la cantidad 
+		ingente de modelos ofrecidos por diferentes compañías y cada una de ellas trata de hacerse 
+		hueco dentro del mundo del entretenimiento digital. Sin embargo, siempre hay quien intenta 
+		diferenciarse del resto mediante la calidad de sus productos o alguna característica que la 
+		hace especial. En esta entrada comentamos los cascos de la serie H3 de la marca EPOS, en concreto del modelo Hybrid.
+	</p>
+	<p>
+		Actualmente el mercado de periféricos para audio está muy saturado debido a la cantidad ingente de modelos ofrecid
+		os por diferentes compañías y cada una de ellas trata de hacerse hueco dentro del mundo del entretenimiento digi
+		tal. Sin embargo, siempre hay quien intenta diferenciarse del resto mediante la calidad de sus productos o alguna car
+		acterística que la hace especial. En esta entrada comentamos los cascos de la serie H3 de la marca EPOS, en concreto del modelo Hybrid.
+	</p>
+	<p>
+		Los auriculares EPOS H3 Hybrid ofrecen con
+		ectividad mediante cable USB/cable consola y conectiv
+		idad Bluetooth simultánea. La diadema ajustable y los auriculares angulares proporcionan un ajuste ergonómico 
+		y comodidad de larga duración, mientras que el micrófono del brazo articulado desmontable, que se silencia automáticamente
+		 cuando se pliega, proporciona una conversación nítida.
+	</p>
+	<img src="imagenes/anlisis1-2.jpg.webp">
+</div>
+
+<div id="analisis2" class="elemento_menu oculto">
+	<img src="imagenes/analisis2-1.jpg.webp" width="900" >
+
+	<h1>
+		ANÁLISIS HADES
+	</h1>
+
+	<p>
+		Hades me ha enamorado. Llevarse el galardón de mejor juego del año 
+		2020 creo que se queda corto para esta obra maestra de Supergiant Games.
+		 A mis más de treinta años jugando ya es difícil volverme loco de pasión 
+		 con un título y Hades lo ha conseguido. Un juego al que di una oportunidad 
+		 por recomendación de un amigo y me arrepiento de no haberlo hecho antes. Su manido género, el de los roguelite, puede que no le haga destacar en un primer vistazo pero en el m
+		omento en el que mueres por primera vez sabes que este juego es especial.
+	</p>
+	<p>
+		La idea de empezar desde cero cada vez que fallamos en un roguelite es 
+		algo que no me fascina pero en Hades quieres morir una y otra vez. Y esto
+		 es porque es la única forma de avanzar en una historia que cada vez nos 
+		 atrapa más. La premisa es sencilla: somos Zagreo, hijo de Hades, que can
+		 sados de la tiranía de nuestro padre decidimos escapar del Inframundo. A 
+		 este no le hará gracia e intentará impedírnoslo. Pero como Zagreo es muy 
+		 majo, contará con la ayuda de los dioses del Olimpo para huir. 
+		No os vamos a contar más de la historia porque termina enganchando como la mejor de las series.
+	</p>
+	<p>
+		La forma de avanzar en un roguelite es morir constantemente y puede p
+		arecer frustrante. Pero en Hades no es así. Cada vez que volvemos al pu
+		nto de partida tenemos la sensación de haber avanzado un poco más en nues
+		tras habilidades gracias a los objetos de mejora permanente. En cada tent
+		ativa de escapar uno o varios dioses del Olimpo nos darán sus bendiciones
+		, que solo estarán activas en ese intento, y con ellas seremos más fuertes
+		 para conseguir diferentes objetos. Estos podremos 
+		intercambiarlos por mejoras para Zagreo a través de varios personajes.
+	</p>
+	<p>
+		La dinámica es fácil, en una perspectiva isométrica vamos a avanzando por
+		 habitaciones en las que debemos derrotar a todos los enemigos, a veces ba
+		 jo condiciones especiales. Según avanzamos se vuelven más agresivos y res
+		 istentes por lo que elegir bien las habilidades aprendidas es fundamental
+		 . Por eso terminaremos teniendo a nuestros dioses favoritos pues sus bend
+		 iciones harán que tengamos una forma u otra de jugar. En ciertos puntos n
+		 os enfrentaremos a personajes mitológicos que hacen de jefes de nivel y n
+		 os pondrán las cosas difíciles si no hemos elegido bien. Además, sabes qu
+		 e si mueres toca empezar desde el principio. Una tensión añadida en los 
+		 enfrentamientos.
+	</p>
+	<img src="imagenes/analisis2-2.jpg.webp" width="500">
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/-2b7GGWNz54?start=7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div id="noticias" class="elemento_menu oculto">
+
+	<p>
+					
+			
+		<img src="imagenes/noticia1.jpg">
+		<h2>NINTENDO SWITCH Y SU JUEGO EN LA NUBE</h2>
+		Nintendo nos presentó al luchador que completará la plantilla de Sup
+		er Smash Bros. Ultimate (Switch, 2018). Toda una sorpresa y una buena
+		 elección: Sora de la saga Kingdom Hearts. Un personaje querido entre
+		 los jugadores que nos trajo una noticia más: los videojuegos de esta 
+		 serie llegarán pronto a Nintendo Switch. Algo previsible que se termi
+		 naran lanzando en la consola más vendida a lo largo del año en Japón 
+		 pero no tanto la forma en la que lo harán. No veremos un lanzamiento 
+		 físico ni digital sino en la nube. Una Cloud version no muy bien rec
+		 ibida por gran parte de la comunidad.
+		 <a class="enlaces" href="#" onclick="muestra('noticia1')">leer mas</a>	
+	</p>
+	<p>
+		<img src="imagenes/noticia2.jpg.webp" width="350">
+		<h2>TEMAZOS DEL VIDEOJUEGO</h2>
+		La famosa precuela de Red Dead Redemption ya protagonizó anteriormente una primera entrada de Temazos del 
+		videojuego, al igual que en su momento hizo el primer juego con Deadman’s
+		 Gun. Esta última melodía es un gran acompañamiento para la despedida d
+		 e un videojuego, un bonito agradecimiento para los oídos del jugador po
+		 r el tiempo invertido delante de una pantalla.
+		 <a class="enlaces" href="#" onclick="muestra('noticia2')">leer mas</a>
+	</p>
+
+</div>
+
+<div id="noticia1" class="elemento_menu oculto">
+
+	<img src="imagenes/noticia1-1.jpg" width="900">
+	<h1>
+		NINTENDO SWITCH Y SU JUEGO EN LA NUBE
+	</h1>
+
+	<p>
+		Nintendo nos presentó al luchador que completará la plantilla de Su
+		per Smash Bros. Ultimate (Switch, 2018). Toda una sorpresa y una buena
+		 elección: Sora de la saga Kingdom Hearts. Un personaje querido entre l
+		 os jugadores que nos trajo una noticia más: los videojuegos de esta seri
+		 e llegarán pronto a Nintendo Switch. Algo previsible que se terminaran l
+		 anzando en la consola más vendida a lo largo del año en Japón pero no tan
+		 to la forma en la que lo harán. No veremos un lanzamiento físico ni digit
+		 al sino en la nube.
+		 Una Cloud version no muy bien recibida por gran parte de la comunidad.
+	</p>
+
+	<p>
+		Nintendo Switch cuenta ya con algunos juegos así, la saga Kingdom Hearts 
+		no serán los primeros, pero no es una opción muy conocida entre los usuar
+		ios. A grandes rasgos, funciona como Google Stadia: nuestra Switch sirve 
+		de enlace entre unos servidores remotos que hacen funcionar el juego y la
+		 pantalla. La consola replica una señal que se envía desde la nube por lo 
+		 que no importa su hardware. 
+		Aquí lo que debemos tener en cuenta es una buena conexión a internet.
+	</p>
+
+	<p>
+		Aclarar que no hablamos de un servicio en la nube como suscripción 
+		similar a PlayStation Now sino de adquirir un juego al que solo pod
+		remos jugar a través de streaming. Tampoco es un alquiler pues el ju
+		ego permanecerá en nuestra biblioteca aunque no podremos ejecutarlo 
+		sin conexión a internet. Un modo de venta que genera un poco de incer
+		tidumbre pues cuando los servidores desaparezcan será, en teoría, imp
+		osible jugar al juego. Además deberemos contar siempre con un buen pun
+		to de acceso a internet y teniendo en cuenta la portabilidad de Switch
+		 esto puede ser un inconveniente.
+
+
+	</p>
+	<img src="imagenes/noticia1-2.jpg" width="500">
+	<img src="imagenes/noticia1-3.jpg" width="500">
+</div>
+
+<div id="noticia2" class="elemento_menu oculto">
+	<img src="imagenes/noticia2-1.jpg.webp">
+	<h1>
+		TEMAZOS DEL VIDEOJUEGO
+	</h1>
+	<p>
+		La famosa precuela de Red Dead Redemption ya protagonizó anteriormente
+		 una primera entrada de Temazos del videojuego, al igual que en su momento
+		  hizo el primer juego con Deadman’s Gun. Esta última melodía es un gran 
+		  acompañamiento para la despedida de un videojuego, un bonito agradecimi
+		  ento para
+		 los oídos del jugador por el tiempo invertido delante de una pantalla.
+	</p>
+	<p>
+		Los créditos de Red Dead Redemption 2 son acompañados por varias canciones
+		 y una de ellas ha sido la escogida para la entrada de hoy, digna merecedo
+		 ra de ocupar un lugar dentro de las selecciones sonoras que realizamos en
+		  Borntoplay. El motivo es evidente. La profundidad y esa calma que transm
+		  ite con un toque melancólico sirven para sumergirnos con fuerza en los r
+		  ecuerdos, repasando 
+		todos esos momentos y lugares que nos cuentan la historia de Arthur Morgan.
+	</p>
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/oE4-xgYcKGE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
+
+<div id="calendario" class="elemento_menu oculto" >
+	<table class="tabla2">
+		<thead>
+		  <caption>Diciembre 2021</caption>
+		  <tr>
+			<th>Lu</th>
+			<th>Ma</th>
+			<th>Mie</th>
+			<th>Ju</th>
+			<th>Vi</th>
+			<th>Sá</th>
+			<th>Do</th>
+		  </tr>
+		</thead>
+		<tbody>
+		  <tr>
+			<td></td>
+			<td></td>
+			<td>1 <img src="imagenes/1dic.webp" width="100" ></td>
+			<td>2</td>
+			<td>3 <a href="https://joseantoniocastilloperez.000webhostapp.com/pruebas5/index.php"> <img src="imagenes/3dic.webp" width="100"> </a></td>
+			<td>4</td>
+			<td>5</td>
+		  </tr>
+		  <tr>
+			<td>6</td>
+			<td>7</td>
+			<td>8</td>
+			<td>9 <a href="https://joseantoniocastilloperez.000webhostapp.com/pruebas5/index.php"> <img src="imagenes/9dic.webp" width="100"> </a></td>
+			<td>10</td>
+			<td>11</td>
+			<td>12</td>
+		  </tr>
+		  <tr>
+			<td>13</td>
+			<td>14</td>
+			<td>15</td>
+			<td>16</td>
+			<td>17 <a href="https://joseantoniocastilloperez.000webhostapp.com/pruebas5/index.php"> <img src="imagenes/17dic.webp" width="100"> </a></td>
+			<td>18</td>
+			<td>19</td>
+		  </tr>
+		  <tr>
+			<td>20</td>
+			<td>21</td>
+			<td>22</td>
+			<td>23</td>
+			<td>24 <a href="https://joseantoniocastilloperez.000webhostapp.com/pruebas5/index.php"> <img src="imagenes/24dic.webp" width="100"> </a></td>
+			<td>25</td>
+			<td>26</td>
+		  </tr>
+		  <tr>
+			<td>27</td>
+			<td>28</td>
+			<td>29</td>
+			<td>30</td>
+			<td>31</td>
+			<td></td>
+			<td></td>
+		  </tr>
+		</tbody>
+	  </table>
+<p>para descargar el catalogo pulse <a href="descarga/catalogo.pdf" download="catalogo.pdf">aqui</a> </p>
+</div>
+ 	</article>
+
+ 	</section>
+
+	<footer>
+			<div class="pie">
+				<div class="copy">
+					<p>&copy; blog</p>
+			 	    <p>José Antonio Castillo Pérez</p>
+				</div>
+				<div class="galeria">
+					<a href="https://www.youtube.com/"><img src="imagenes/youtube.png" width="100"></a>
+					<a href="https://twitter.com/VandalOnline"><img src="imagenes/twitter.png" width="100"></a>
+					<a href="https://discord.com/"><img src="imagenes/discord.png" width="100"></a>
+				</div>
+				<div class="copy" >
+					<p>&copy; blog</p>
+			 	    <p>José Antonio Castillo Pérez</p>
+				</div>
+			</div>
+	</footer>
+</body>
+</html>
