@@ -259,3 +259,6 @@ p {
   div#noticias p {
 	margin-bottom: 5em;
   }
+  .version {
+	  color: white;
+  }
